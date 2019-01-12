@@ -470,6 +470,6 @@ def dated_url_for(endpoint, **values):
 
 
 if __name__ == '__main__':
-    app.secret_key = 'NKjzwlqlxGWI9VJx_M0Rn9gh'
+    app.secret_key = 'udacity'
     app.debug = True
     app.run(host='0.0.0.0', port=5000)
