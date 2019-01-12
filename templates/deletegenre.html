@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block body %}
+	<h2> Are you sure you want to delete {{genre.name}}? </h2>
+
+	<form action="#" method='post'>
+
+		<button type="submit" class="btn delete" id="submit" type="submit">
+			<i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+		<a href='{{url_for('showgenres')}}'>
+			<button class="btn delete" type="button">
+				<i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+		</a>
+
+	</form>
+{% endblock %}

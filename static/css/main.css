@@ -1,0 +1,275 @@
+/*Genric*/
+* {
+  font-family: "times new roman", sans-serif;
+  ;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.form-control {
+  margin-left: 10px;
+}
+
+select {
+  margin-left: 10px;
+}
+
+label {
+  margin: 10px;
+}
+
+textarea {
+  margin: 10px;
+}
+
+article {
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: "times new roman", sans-serif;
+  font-size: 50px;
+  color: #51453B;
+  line-height: 60px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 24px;
+  color: #BC5050;
+  line-height: 29px;
+}
+
+h3 {
+  font-size: 18px;
+  color: black;
+  line-height: 23px;
+}
+
+p {
+  font-family: "times new roman", sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+strong {
+  font-size: 16px;
+  color: #7B7573;
+  line-height: 24px;
+}
+
+a {
+  font-size: 14px;
+  color: #0093B9;
+  line-height: 17px;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+}
+
+.margin-right {
+  margin-right: 30px;
+}
+
+.btn {
+  padding: 20px;
+  margin: 10px;
+  margin-left: 10px;
+  border-width: 4px;
+  color: black;
+}
+
+.btn:hover {
+  border-color: #BC5050;
+}
+
+.btn.delete {
+  border-color: #aaaaaa;
+  color: #aaaaaa;
+}
+
+.btn.delete:hover {
+  border-color: #aaaaaa;
+  color: red;
+}
+
+.banner.main {
+  height: 100px;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #C5B790;
+  opacity: .7;
+  margin-left: 0px;
+  margin-top: 20px;
+  font-family: "times new roman", sans-serif;
+}
+
+.banner.menu {
+  height: 120px;
+  background-color: #C5B790;
+  background-position: top;
+  margin-left: 0px;
+  margin-top: 20px;
+  opacity: .7;
+}
+
+.banner h1 {
+  margin-right: 30px;
+  text-align: left;
+}
+
+.banner.menu a {
+  margin-top: 16px;
+  margin-right: 10px;
+  line-height: 14px;
+  font-size: 18px;
+  color: black;
+  font-weight: 500px;
+  float: right;
+}
+
+.book-item {
+  background-color: #C38683;
+  background-position: bottom;
+  opacity: .5;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.book-item p {
+  color: black;
+  margin-left: 10px;
+}
+
+.book-price {
+  font-weight: 700;
+}
+
+.creator {
+  padding-right: 30px;
+  margin-top: 10px;
+  text-align: right;
+  float: right;
+}
+
+.creator img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.creator figcaption {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  margin-top: -35px;
+  margin-left: 25px;
+}
+
+.flash {
+  background-color: #EFCEA3;
+  width: 100%;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.flash li {
+  list-style-type: none;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: 200px;
+}
+
+iframe[seamless] {
+  border: 0;
+  display: block;
+  width: 1300px;
+  height: 100%;
+}
+
+/* Genre List Style*/
+#genre-list {
+  background-color: White;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+#genre-list:hover {
+  background-color: #C38683;
+  opacity: .7;
+  padding-top: 20px;
+}
+
+.genrelabel {
+  margin-left: 10px;
+}
+
+/* Style the sidebar */
+.sidebar {
+  z-index: 5000;
+  height: 140px;
+  width: 180px;
+  background-color: #E9DCC9;
+  overflow-x: hidden;
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #925262;
+  opacity: .7;
+}
+
+/*Home Page Logout Link Style*/
+#logout {
+  font-size: 14px;
+  color: #818181;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/*Google Sign in button*/
+#signinButton {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}

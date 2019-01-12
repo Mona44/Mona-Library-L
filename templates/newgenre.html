@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block body %}
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1">
+			<h1>New Genre</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1 padding-top">
+			<form action="#" method="post">
+				<div class="form-group">
+					<label for="name" class="genrelabel">Name:</label>
+					<input type="text" class="form-control" maxlength="100" name="name">
+					<div class="padding-bottom"></div>
+					<button type="submit" class="btn" id="submit" type="submit">
+						<i class="fa fa-plus" aria-hidden="true"></i>Create</button>
+					<a href='{{url_for('showgenres')}}'>
+						<button class="btn delete" type="button">
+							<i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	{% endblock %}

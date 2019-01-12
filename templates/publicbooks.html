@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block body %}
+	<!--Template of public books display -->
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 ">
+			<h1>{{ genre.name }}
+				<figure class="creator">
+					<img src="{{creator.picture}}" width="120" height="90" />
+					<figcaption>{{ creator.name }}</figcaption>
+				</figure>
+			</h1>
+
+		</div>
+	</div>
+	<div class="row padding-top padding-bottom">
+		<div class="col-md-1"></div>
+		<div class="col-md-11">
+		</div>
+		<div class="col-md-7"></div>
+	</div>
+
+	{% if books !=[] %}
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3">
+			{% for i in books %}
+            <div class="book-item">
+                <h3>{{i.name}}</h3>
+                <p>By {{i.author}}</p>
+								<p>ID: {{i.id}}</p>
+                <p class="book-price">{{i.price}}</p>
+                <p>{{i.description}}</p>
+								<a href='{{url_for('bookItemJSON', genre_id = genre.id, book_id=i.id ) }}'>JSON</a>
+            </div>
+			{% endfor %}
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	{% endif %}
+{% endblock %}
